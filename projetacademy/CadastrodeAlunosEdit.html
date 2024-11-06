@@ -1,0 +1,124 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloCadastroAlunos.css">
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <title>Cadastro de Alunos</title>
+</head>
+
+<body>
+
+   
+
+    <header>ACADEMIA SPARTA</header>
+   
+
+    <nav id="fachada">
+        <a  href="FichadoAluno.html">FICHA DO ALUNO</a>
+        <a href="Tela inicial.html">TELA INICIAL</a>
+    </nav>
+   
+<div id="cadastro">Alteração Cadastro dos Alunos</div>
+
+  <nav>
+    
+</nav>
+
+
+<form action="CadastrodeAlunos.php" method="POST">
+
+  <fieldset>
+
+    <legend><p>Cadastro dos Alunos</p></legend>
+    <label for="nome"></label>Nome do Aluno (a):</Nome></label>
+    <input type="text"  name="nome" required>
+
+    <label for="data_nascimento"> Data de Nascimento:</label>
+    <input type="date" name= "data_nascimento">
+
+    <label for="cpf"></label>CPF:</label>
+    <input type="text" name = "cpf">
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" name="telefone">
+
+    <label for="celular">Celular:</label>
+    <input type="text" name="celular">
+    
+    <label for="email">Email:</label>
+    <input type="email" name="email">
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" name="endereco">
+
+</fieldset>   
+      
+        
+       
+
+   <fieldset>
+
+   <legend><p>Endereço</p></legend>
+   <label for="tipo_endereco">TIPO:</label>
+
+   <select id="tipo_endereco">
+
+    <option value="">Selecione</option>
+    <option value="">Rua</option>
+    <option value="">Estrada</option>
+    <option value="">Rodovia</option>
+    <option value="">outros</option>
+    <option value="">Avenida</option>
+
+    </select>
+
+  <label for="logradouro_endereco">Logradouro:</label>
+  <input type="text"id:"logradouro_endereco"/>
+  <label for="numero_endereco">Numero:</label>
+  <input type="text"id: "numeroendereco"/>
+  <label for="complemento_endereco">Complemento</label>
+  <input type="text" id: "complemento_endereco"/>
+  <label for="cep">Cep:</label>
+  <input type="text" id:"cep"/>
+  <label for="bairro">Bairro:</label>
+  <input type="text" id: "bairro"/>
+
+  </fieldset>
+
+  <fieldset>
+    <label for="modalidade">MODALIDADE:</label>
+    <label><select id="modalidade">
+    <option value="">Selecione</option>
+    <option value="">MUSCULAÇÃO</option>
+    <option value="">AEOROBICA</option>
+    <option value="">JIU-JITSU</option>
+    <option value="">JUDO</option>
+    <option value="">CROSS-FIT</option>
+    </select>
+  
+    <legend><p>Observações:</p></legend>
+    <label for="msg">Mensagem:</label>
+    <textarea name="mensagem" cols="80" rows="3"></textarea>
+  </fieldset>
+
+  <fieldset>
+    <button type="submit">Salvar alterações </button>
+    <button type="reset"> Limpar Mensagem </button>
+  </fieldset>
+
+</form> 
+
+
+</body>
+<footer>
+    EQUIPE DE DESENVOLVIMENTO WEB:
+    JACKSON ANDRADE / ANTHONY PETERSON
+    <br>   
+</footer>
+</html>
